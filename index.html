@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey</title>
+</head>
+<body>
+    <div id="welcomeScreen">
+        <h1>Welcome to Our Shop Survey!</h1>
+        <button id="startButton">Start Survey</button>
+    </div>
+
+    <div id="questionnaire" style="display: none;">
+        <h2>Survey Question</h2>
+        <div id="questionContainer"></div>
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+        <p id="progressText">Question 1 of 5</p>
+        <button id="prevButton">Previous</button>
+        <button id="skipButton">Skip</button>
+        <button id="nextButton">Next</button>
+    </div>
+
+    <div id="confirmationDialog" style="display: none;">
+        <h2>Confirmation</h2>
+        <p>Are you sure you want to submit the survey?</p>
+        <button id="confirmButton">Yes</button>
+        <button id="cancelButton">No</button>
+    </div>
+
+    <div id="thankYouScreen" style="display: none;">
+        <h2>Thank You!</h2>
+        <p>Thank you for participating in our survey.</p>
+    </div>
+
+    <script src="survey.js"></script>
+</body>
+</html>
